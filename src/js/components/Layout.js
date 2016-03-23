@@ -1,10 +1,15 @@
 import React from "react";
 
 
-class Layout extends React.Component {
+export defailt class Layout extends React.Component {
+  constructor(){
+    super();
+    this.name = "Matthew";
+  }
+
   render() {
     return (
-      <h1>It works!!!</h1>
-    );
+      <h1>My name is {this.name}!</h1>
+    )
   }
 }
