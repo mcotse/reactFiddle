@@ -2,8 +2,9 @@ import React from "react";
 
 
 export default class DynamicContent extends React.Component {
+  //handle content changes
   handleChange(e){
-    const title = e.target.value;
+    const content = e.target.value;
     this.props.changeContent(content);
   }
 
