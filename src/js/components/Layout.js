@@ -2,6 +2,7 @@ import React from "react";
 
 
 import Header from "./Header"
+import DynamicContent from "./DynamicContent"
 import Footer from "./Footer"
 
 export default class Layout extends React.Component {
@@ -12,13 +13,14 @@ export default class Layout extends React.Component {
     };
   }
 
-  changeTitle(title){
-    this.setState({title});
+  changeContent(content){
+    this.setState({content});
   }
   render() {
     return (
       <div>
-        <Header changeTitle={this.changeTitle.bind(this)} title = {this.state.title}/>
+        <Header/>
+        <DynamicContent changeContent={this.changeContent.bind(this)} content = {this.state.content}/>
         <Footer />
       </div>
     );
