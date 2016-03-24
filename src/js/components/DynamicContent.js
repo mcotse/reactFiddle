@@ -12,26 +12,22 @@ export default class DynamicContent extends React.Component {
 
   handleClick(){
     this.props.clearContent();
+    this.TextInput.value ="";
+
   }
 
   render() {
-    // if (this.props.content!=null){
-    //   console.log("true");
-    // }
-    // else{
-    //   console.log("false")
-    // }
     return (
-
       <div>
         {/*display content state thats being passed in*/}
         <div><h3>{this.props.content}</h3></div>
         <input
-          value = {this.props.content}
+          defaultValue = "Change me!"
+          // value = {this.props.content}
           onChange={this.handleChange.bind(this)}
           ref = {(ref) => this.TextInput = ref}
         />
-        <br></br>
+        <br/>
         <input
           class="btn btn-xs btn-danger"
           type="button"

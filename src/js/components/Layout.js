@@ -19,7 +19,7 @@ export default class Layout extends React.Component {
   }
   //clear the content state
   clearContent(){
-    this.setState({content: <br/>});
+    this.setState({content: ""});
   }
   render() {
     return (
