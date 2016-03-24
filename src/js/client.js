@@ -12,6 +12,3 @@ ReactDOM.render(
     <Route path="/" component = {Layout}></Route>
   </Router>,
 app);
-// ReactDOM.render(
-//   <Layout/>,
-// app);
