@@ -22,7 +22,7 @@ export default class DynamicContent extends React.Component {
         {/*display content state thats being passed in*/}
         <div><h3>{this.props.content}</h3></div>
         <input
-          defaultValue = "Change me!"
+          defaultValue = "Change Me"
           // value = {this.props.content}
           onChange={this.handleChange.bind(this)}
           ref = {(ref) => this.TextInput = ref}
