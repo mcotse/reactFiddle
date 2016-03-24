@@ -8,15 +8,20 @@ export default class DynamicContent extends React.Component {
     this.props.changeContent(content);
   }
 
+  handleClear(){
+    this.props.clearContent();
+    
+  }
+
   render() {
     return (
       <div>
         {/*display content state thats being passed in*/}
-        <div>{this.props.content}</div>
-        <input value = {this.props.content} onChange={this.handleChange.bind(this)}/>
+        <h3>{this.props.content}</h3>
+        <input onChange={this.handleChange.bind(this)} id="input"/>
         <br></br>
-        <button class="btn btn-xs btn-danger">Clear</button>
-      </div>
+        <button onClick={this.handleClear.bind(this)} class="btn btn-xs btn-danger">Clear</button>
+        </div>
     );
   }
 }

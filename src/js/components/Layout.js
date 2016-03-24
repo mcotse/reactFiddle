@@ -10,7 +10,7 @@ export default class Layout extends React.Component {
   constructor(){
     super();
     this.state = {
-      content: "I will change when you type below",
+      content: "Type something below!"
     };
   }
   //change the content state
@@ -20,7 +20,7 @@ export default class Layout extends React.Component {
   //clear the content state
   clearContent(){
     this.setState({
-      content:"",
+      content:"Placeholder"
     })
   }
   render() {
@@ -28,7 +28,11 @@ export default class Layout extends React.Component {
       <div class = "text-center">
         <Header/>
         {/*pass in changeContent function to DynamicContent component*/}
-        <DynamicContent changeContent={this.changeContent.bind(this)} content = {this.state.content}/>
+        <DynamicContent
+          changeContent={this.changeContent.bind(this)}
+          clearContent={this.clearContent.bind(this)}
+          content = {this.state.content}
+        />
         <Footer />
       </div>
     );
