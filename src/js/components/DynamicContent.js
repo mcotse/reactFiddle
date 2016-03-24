@@ -11,8 +11,11 @@ export default class DynamicContent extends React.Component {
   render() {
     return (
       <div>
+        {/*display content state thats being passed in*/}
         <div>{this.props.content}</div>
         <input value = {this.props.content} onChange={this.handleChange.bind(this)}/>
+        <br></br>
+        <button class="btn btn-xs btn-danger">Clear</button>
       </div>
     );
   }

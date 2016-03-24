@@ -17,7 +17,12 @@ export default class Layout extends React.Component {
   changeContent(content){
     this.setState({content});
   }
-
+  //clear the content state
+  clearContent(){
+    this.setState({
+      content:"",
+    })
+  }
   render() {
     return (
       <div class = "text-center">
