@@ -10,7 +10,7 @@ export default class DynamicContent extends React.Component {
   render() {
     return (
       <div>
-        <a>{this.props.content}</a>
+        <div>{this.props.content}</div>
         <input value = {this.props.content} onChange={this.handleChange.bind(this)}/>
       </div>
     );

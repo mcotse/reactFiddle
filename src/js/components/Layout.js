@@ -18,7 +18,7 @@ export default class Layout extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div class = "text-center">
         <Header/>
         <DynamicContent changeContent={this.changeContent.bind(this)} content = {this.state.content}/>
         <Footer />
