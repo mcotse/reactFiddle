@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 
 
-export default class Title extends React.Component {
+export default class Navbar extends React.Component {
   render() {
     return (
       <div>
