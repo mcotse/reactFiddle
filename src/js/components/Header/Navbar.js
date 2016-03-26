@@ -6,10 +6,10 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <div>
-        <nav class="navbar navbar-default">
-          <div class="containter-fluid">
+        <div class="navbar navbar-default" role="navigation">
+          <div class="containter">
             <div clas="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -25,7 +25,7 @@ export default class Navbar extends React.Component {
               </ul>
             </div>
           </div>
-        </nav>
+        </div>
         {/*}<Link to="about" type="button" class="btn btn-default">About</Link>
         <Link to="app" type="button" class="btn btn-primary">App</Link>
         <Link to="settings" type="button" class="btn btn-success">Settings</Link>*/}
