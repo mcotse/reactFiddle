@@ -9,7 +9,7 @@ export default class Navbar extends React.Component {
         <nav class="navbar navbar-default navbar-static-top">
           <div class="containter">
             <div clas="navbar-header">
-              <Link to="/">ReactFiddle</Link>
+              <Link to="/" class="navbar-brand">ReactFiddle</Link>
             </div>
           </div>
         </nav>
