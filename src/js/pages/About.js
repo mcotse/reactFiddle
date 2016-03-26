@@ -5,6 +5,7 @@ export default class About extends React.Component {
     return(
       <div>
         <h3>About</h3>
+        <span>Just fiddlin around with react</span>
       </div>
     );
   }
