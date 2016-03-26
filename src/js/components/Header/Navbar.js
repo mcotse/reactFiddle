@@ -9,6 +9,12 @@ export default class Navbar extends React.Component {
         <nav class="navbar navbar-default">
           <div class="containter-fluid">
             <div clas="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
               <Link to="/" class="navbar-brand">ReactFiddle</Link>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
