@@ -1,9 +1,15 @@
 import React from "react";
+import Header from "../components/Header.js"
+import Footer from "../components/Footer.js"
 
 export default class Settings extends React.Component {
   render(){
     return(
-      <h1>Settingss</h1>
+      <div>
+        <Header/>
+        <h1>Settings</h1>
+        <Footer/>
+      </div>
     );
   }
 }
