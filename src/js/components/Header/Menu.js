@@ -6,9 +6,9 @@ export default class Title extends React.Component {
   render() {
     return (
       <div>
-        <button type="button" class="btn btn-default">About</button>
-        <button type="button" class="btn btn-primary">App</button>
-        <button type="button" class="btn btn-success">Settings</button>
+        <Link to="about" type="button" class="btn btn-default">About</Link>
+        <Link to="app" type="button" class="btn btn-primary">App</Link>
+        <Link to="settings" type="button" class="btn btn-success">Settings</Link>
       </div>
     );
   }

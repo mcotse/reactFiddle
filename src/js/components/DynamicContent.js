@@ -4,6 +4,12 @@ import React from "react";
 export default class DynamicContent extends React.Component {
 
 
+  constructor(){
+    super();
+    this.state = {
+      content: "Type something below!"
+    };
+  }
   //handle content changes
   handleChange(e){
     const content = e.target.value;
@@ -14,6 +20,15 @@ export default class DynamicContent extends React.Component {
     this.props.clearContent();
     this.TextInput.value ="";
 
+  }
+
+  //change the content state
+  changeContent(content){
+    this.setState({content});
+  }
+  //clear the content state
+  clearContent(){
+    this.setState({content: ""});
   }
 
   render() {
