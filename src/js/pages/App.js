@@ -35,10 +35,9 @@ export default class App extends React.Component {
     return (
       <div>
         {/*display content state thats being passed in*/}
-        <div><h3>{this.props.content}</h3></div>
+        <div><h3>{this.state.content}</h3></div>
         <input
           defaultValue = "Change Me"
-          // value = {this.props.content}
           onChange={this.handleChange.bind(this)}
           ref = {(ref) => this.TextInput = ref}
         />
