@@ -21,6 +21,7 @@ export default class Navbar extends React.Component {
     //class will have "active" when path name is active
     const aboutClass = location.pathname === "/" ? "active" : "";
     const appClass = location.pathname.match(/^\/app/) ? "active" : "";
+    const archivesClass = location.pathname.match(/^\/archives/) ? "active" : "";
     const settingsClass = location.pathname.match(/^\/settings/) ? "active" : "";
     const navClass = collapsed ? "collapse" : "";
 
@@ -47,6 +48,9 @@ export default class Navbar extends React.Component {
                 </li>
                 <li class={appClass}>
                   <Link to="app" onClick={this.toggleCollapse.bind(this)}>App</Link>
+                </li>
+                <li class={archivesClass}>
+                  <Link to="archives" onClick={this.toggleCollapse.bind(this)}>Archives</Link>
                 </li>
                 <li class={settingsClass}>
                   <Link to="settings" onClick={this.toggleCollapse.bind(this)}>Settings</Link>
