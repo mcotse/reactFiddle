@@ -19,8 +19,6 @@ export default class Footer extends React.Component {
     return (
       <div id="footer" style={footerStyle}>
         <div class="container">
-          {/*<a href="https://github.com/mcotse" class="fa fa-lg fa-github"></a><i> </i>
-          <a href="http://matthewtse.xyz" class="fa fa-lg fa-globe"></a>*/}
           <p class="muted credit" style={muted}><a href="https://github.com/mcotse" class="fa fa-lg fa-github" style={grey}></a> Matthew Tse 2016 </p>
         </div>
       </div>
