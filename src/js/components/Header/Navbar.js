@@ -41,13 +41,13 @@ export default class Navbar extends React.Component {
 
             <div class={navClass + "navbar-collapse"} id="navbar">
               <ul class="nav navbar-nav">
-                <li Class={aboutClass}>
+                <li class={aboutClass}>
                   <IndexLink to="/" onClick={this.toggleCollapse.bind(this)}>About</IndexLink>
                 </li>
-                <li Class={appClass}>
+                <li class={appClass}>
                   <Link to="app" onClick={this.toggleCollapse.bind(this)}>App</Link>
                 </li>
-                <li>
+                <li class={settingsClass}>
                   <Link to="settings" onClick={this.toggleCollapse.bind(this)}>Settings</Link>
                 </li>
               </ul>
