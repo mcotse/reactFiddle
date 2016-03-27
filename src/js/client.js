@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {Router, Route, IndexRoute, hashHistory} from "react-router";
 
-import Layout from "./components/Layout";
+import Layout from "./pages/Layout";
 import About from "./pages/About";
 import App from "./pages/App";
 import Settings from "./pages/Settings";
