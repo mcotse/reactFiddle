@@ -4,7 +4,7 @@ import React from "react";
 export default class Footer extends React.Component {
   render() {
     const footerStyle = {
-      position: "absolute",
+      position: "fixed",
       bottom: "0",
       width: "100%",
       height: "60px",

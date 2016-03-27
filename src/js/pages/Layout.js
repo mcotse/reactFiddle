@@ -11,9 +11,18 @@ export default class Layout extends React.Component {
   render() {
     const { location } = this.props;
     return (
-      <div class = "text-center" id="wrap">
+      <div id="wrap">
         <Header location={location}/>
-        {this.props.children}
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+
+              {this.props.children}
+
+            </div>
+          </div>
+        </div>
+
         <Footer />
       </div>
     );
