@@ -25,7 +25,6 @@ export default class Navbar extends React.Component {
     const settingsClass = location.pathname.match(/^\/settings/) ? "active" : "";
     const navClass = collapsed ? "collapse" : "";
 
-
     return (
       <div>
         <nav class="navbar navbar-default" role="navigation">

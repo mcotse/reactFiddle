@@ -9,11 +9,15 @@ export default class Layout extends React.Component {
   //declare default state
 
   render() {
+    const containerStyle = {
+      marginTop:"-40px",
+      marginBottom: "80px"
+    };
     const { location } = this.props;
     return (
       <div id="wrap">
         <Header location={location}/>
-        <div class="container">
+        <div class="container" style={containerStyle}>
           <div class="row">
             <div class="col-lg-12">
 
