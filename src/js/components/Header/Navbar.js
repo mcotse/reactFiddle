@@ -18,6 +18,7 @@ export default class Navbar extends React.Component {
   render() {
     const { location } = this.props;
     const { collapsed } = this.state;
+    //class will have "active" when path name is active
     const aboutClass = location.pathname === "/" ? "active" : "";
     const appClass = location.pathname.match(/^\/app/) ? "active" : "";
     const settingsClass = location.pathname.match(/^\/settings/) ? "active" : "";
@@ -29,6 +30,7 @@ export default class Navbar extends React.Component {
         <nav class="navbar navbar-default" role="navigation">
           <div class="container-fluid">
             <div class="navbar-header">
+              {/*inverse current state.collapse*/}
               <button type="button" class="navbar-toggle collapsed" onClick={this.toggleCollapse.bind(this)}>
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -36,7 +38,7 @@ export default class Navbar extends React.Component {
                 <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="#">ReactFiddle</a>
-            </div>
+              </div>
 
             <div class={"navbar-collapse " + navClass} id="navbar">
               <ul class="nav navbar-nav">
