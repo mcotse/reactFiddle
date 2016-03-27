@@ -13,7 +13,6 @@ export default class Navbar extends React.Component {
   toggleCollapse() {
     const collapsed = !this.state.collapsed;
     this.setState({collapsed});
-    console.log(collapsed);
   }
 
   render() {
@@ -39,7 +38,7 @@ export default class Navbar extends React.Component {
               <a class="navbar-brand" href="#">ReactFiddle</a>
             </div>
 
-            <div class={navClass + "navbar-collapse"} id="navbar">
+            <div class={"navbar-collapse " + navClass} id="navbar">
               <ul class="nav navbar-nav">
                 <li class={aboutClass}>
                   <IndexLink to="/" onClick={this.toggleCollapse.bind(this)}>About</IndexLink>
