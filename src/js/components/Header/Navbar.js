@@ -18,18 +18,18 @@ export default class Navbar extends React.Component {
   render() {
     const { location } = this.props;
     const { collapsed } = this.state;
-    const featuredClass = location.pathname === "/" ? "active" : "";
-    const archivesClass = location.pathname.match(/^\/archives/) ? "active" : "";
+    const aboutClass = location.pathname === "/" ? "active" : "";
+    const appClass = location.pathname.match(/^\/app/) ? "active" : "";
     const settingsClass = location.pathname.match(/^\/settings/) ? "active" : "";
     const navClass = collapsed ? "collapse" : "";
 
 
     return (
       <div>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default" role="navigation">
           <div class="container-fluid">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <button type="button" class="navbar-toggle collapsed" onClick={this.toggleCollapse.bind(this)}>
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -38,13 +38,18 @@ export default class Navbar extends React.Component {
               <a class="navbar-brand" href="#">ReactFiddle</a>
             </div>
 
-            <div class="collapse navbar-collapse" id="navbar">
+            <div class={navClass + "navbar-collapse"} id="navbar">
               <ul class="nav navbar-nav">
-                <li><Link activeClassName="active" to="about">About</Link></li>
-                <li><Link activeClassName="active" to="App">App</Link></li>
-                <li><Link activeClassName="active" to="Settings">Settings</Link></li>
+                <li Class={aboutClass}>
+                  <IndexLink to="about" onClick={this.toggleCollapse.bind(this)}>About</IndexLink>
+                </li>
+                <li Class={appClass}>
+                  <Link to="App" onClick={this.toggleCollapse.bind(this)}>App</Link>
+                </li>
+                <li>
+                  <Link to="Settings" onClick={this.toggleCollapse.bind(this)}>Settings</Link>
+                </li>
               </ul>
-
             </div>
           </div>
         </nav>
