@@ -21,19 +21,11 @@ export default class App extends React.Component {
     this.TextInput.value ="";
 
   }
-  //
-  // //change the content state
-  // changeContent(content){
-  //   this.setState({content});
-  // }
-  // //clear the content state
-  // clearContent(){
-  //   this.setState({content: ""});
-  // }
 
   render() {
     return (
       <div>
+        <h1>App</h1>
         {/*display content state thats being passed in*/}
         <div><h3>{this.state.content}</h3></div>
         <input

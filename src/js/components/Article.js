@@ -7,7 +7,7 @@ export default class extends React.Component {
 
     return (
       <div class="col-md-4">
-        <h4>{title}</h4>
+        <h3>{title}</h3>
         <p>testing testing</p>
         <a class="btn btn-default" href="#">More Info</a>
       </div>
