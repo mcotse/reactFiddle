@@ -32,8 +32,7 @@ export default class App extends React.Component {
           defaultValue = "Change Me"
           onChange={this.handleChange.bind(this)}
           ref = {(ref) => this.TextInput = ref}
-        />
-        <br/>
+        /><br/>
         <input
           class="btn btn-xs btn-danger"
           type="button"

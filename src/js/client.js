@@ -17,7 +17,7 @@ ReactDOM.render(
       <IndexRoute component={About}></IndexRoute>
       <Route path="app" name="app" component={App}></Route>
       <Route path="settings" name="settings" component={Settings}></Route>
-      <Route path="archives" name="archives" component={Archives}></Route>
+      <Route path="archives(/:article)" name="archives" component={Archives}></Route>
     </Route>
   </Router>,
 app);
